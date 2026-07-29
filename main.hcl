@@ -1,5 +1,5 @@
 resource "lab" "main" {
-  title       = "Conflicted title"
+  title       = "Conflicted title 3"
   description = "This is the Skeleton Lab.  \nYou can use this as a minimal starting point for developing labs. 2"
 
   # timelimit and idle are both required on every lab.
@@ -21,6 +21,11 @@ resource "lab" "main" {
       page "untitled-page-1" {
         reference = resource.page.untitled-page-1
         title     = "Untitled page 1"
+      }
+
+      page "untitled-page-2" {
+        reference = resource.page.untitled-page-2
+        title     = "Untitled page 2"
       }
     }
   }
