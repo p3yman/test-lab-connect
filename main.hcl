@@ -1,5 +1,5 @@
 resource "lab" "main" {
-  title       = "Conflicted title New 3"
+  title       = "Conflicted title New 4"
   description = "This is the Skeleton Lab.  \nYou can use this as a minimal starting point for developing labs. 2"
 
   # timelimit and idle are both required on every lab.
