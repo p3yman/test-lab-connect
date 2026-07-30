@@ -4,6 +4,7 @@ resource "lab" "main" {
 
   # timelimit and idle are both required on every lab.
   settings {
+    theme = "modern-dark"
     idle {
       enabled = true
       timeout = "15m"
@@ -22,11 +23,13 @@ resource "lab" "main" {
         reference = resource.page.untitled-page-1
         title     = "Untitled page 1"
       }
-
       page "untitled-page-2" {
         reference = resource.page.untitled-page-2
         title     = "Untitled page 2"
       }
+    }
+    chapter "untitled-chapter-1" {
+      title = "Untitled chapter 1"
     }
   }
 }
