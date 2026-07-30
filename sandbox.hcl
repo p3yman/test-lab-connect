@@ -11,6 +11,6 @@ resource "container" "container" {
   }
   resources {
     cpu    = 1000
-    memory = 256
+    memory = 512
   }
 }
